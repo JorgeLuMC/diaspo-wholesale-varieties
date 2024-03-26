@@ -6,7 +6,6 @@ import Icon2 from '../../assets/images/icon-2.svg'
 import Icon3 from '../../assets/images/icon-3.svg'
 import Icon4 from '../../assets/images/icon-4.svg'
 import Icon5 from '../../assets/images/icon-5.svg'
-import Logo from '../../assets/images/logo.svg';
 import { Link } from 'react-router-dom';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import HeadphonesOutlinedIcon from '@mui/icons-material/HeadphonesOutlined';
@@ -109,7 +108,8 @@ const Footer = () => {
                     <div className='container-fluid'>
                         <div className='row'>
                             <div className='col-md-3 part1'>
-                                <Link to='/'><img src={Logo} /></Link>
+                                {/* <Link to='/'><img src={Logo} /></Link> */}
+                                <h2>Logo</h2>
                                 <br /><br />
                                 <p>Awesome grocery store website template</p>
                                 <br />
