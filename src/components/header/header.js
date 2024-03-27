@@ -3,8 +3,7 @@ import '../header/header.css';
 // import Logo from '../../assets/images/logo.svg';
 import SearchIcon from '@mui/icons-material/Search';
 import Select from '../selectDrop/select';
-import axios from 'axios';
-import {FlagOutlined} from '@mui/icons-material';
+import {LanguageOutlined} from '@mui/icons-material';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import IconCompare from '../../assets/images/icon-compare.svg';
 import IconHeart from '../../assets/images/icon-heart.svg';
@@ -26,7 +25,6 @@ import { useContext } from 'react';
 import { MyContext } from '../../App';
 import { useNavigate } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
-import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
@@ -179,7 +177,7 @@ const Header = (props) => {
                             <div className='col-sm-5 d-flex align-items-center part3 res-hide'>
                                 <div className='ml-auto d-flex align-items-center'>
                                     <div className='countryWrapper'>
-                                        <Select data={selectLanguage} placeholder={'select language'} icon={<FlagOutlined style={{ opacity: '0.5' }} />} />
+                                        <Select data={selectLanguage} placeholder={'select language'} icon={<LanguageOutlined style={{ opacity: '0.5' }} />} />
                                     </div>
                                     <ClickAwayListener onClickAway={() => setisOpenDropDown(false)}>
                                         <ul className='list list-inline mb-0 headerTabs'>

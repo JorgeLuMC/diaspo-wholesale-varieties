@@ -1,4 +1,18 @@
 const data = {
+  navigationData: [
+    {
+      path: "/",
+      value: "Home"
+    },
+    {
+      path: "/blog",
+      value: "Blog"
+    },
+    {
+      path: "/contact",
+      value: "contact"
+    },
+  ],
   productData: [
     {
       cat_name: "Electronics",
@@ -13,8 +27,9 @@ const data = {
                 "OnePlus Nord CE 2 Lite 5G,128 GB,6 GB RAM,Blue Tide,Mobile Phone",
               price: "16,999.00",
               oldPrice: "19,999.00",
-              weight: [],
               RAM: [4, 6, 8],
+              RamSelectValue: null,
+              ProductAvaliable: 0,
               catImg:
                 "https://www.jiomart.com/images/product/original/492850035/oneplus-nord-ce-2-lite-5g-128-gb-6-gb-ram-blue-tide-mobile-phone-digital-o492850035-p591224603-0-202208112007.png",
               discount: "12",
@@ -250,6 +265,7 @@ const data = {
             },
             {
               productName: "Mid-Rise Skinny Fit Jeans",
+              ofectActive: false,
               price: "269.00",
               oldPrice: "899.00",
               weight: [],

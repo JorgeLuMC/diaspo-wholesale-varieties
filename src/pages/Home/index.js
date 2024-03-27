@@ -55,11 +55,10 @@ const Home = (props) => {
     const catArr = createCatArr(); // Call the function to create catArr
 
     setcatArray(catArr);
-    console.log(catArr);
     setactiveTab(catArr[0]);
 
     window.scrollTo(0, 0);
-  }, [prodData]);
+  }, []);
 
   useEffect(() => {
     var arr = [];
@@ -84,7 +83,7 @@ const Home = (props) => {
           }
         });
       });
-  }, [activeTab, activeTabData, prodData]);
+  }, [activeTab, activeTabData]);
 
   const bestSellsArr = [];
 
@@ -120,8 +119,8 @@ const Home = (props) => {
               {catArray.length !== 0 &&
                 catArray.map((cat, index) => {
                   return (
-                    <li key={index} className="list list-inline-item">
-                      <a
+                    <li key={index + 10} className="list list-inline-item">
+                      <div
                         className={`cursor text-capitalize ${
                           activeTabIndex === index ? "act" : ""
                         }`}
@@ -133,7 +132,7 @@ const Home = (props) => {
                         }}
                       >
                         {cat}
-                      </a>
+                      </div>
                     </li>
                   );
                 })}
